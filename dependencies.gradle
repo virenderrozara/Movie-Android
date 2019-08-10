@@ -1,0 +1,52 @@
+ext {
+    compileSdkVersion = 27
+    minSdkVersion = 21
+    targetSdkVersion = 27
+    supportLibVersion = "27.0.2"
+    constraintLayoutVersion = "1.1.3"
+    archComponentsVersion = "1.1.1"
+    roomVersion = "1.1.0-beta1"
+    pagingVersion = "1.0.0-beta1"
+    retrofitVersion = "2.3.0"
+    okhttpLoggingInterceptorVersion = "3.9.0"
+    //Glide Version
+    glideVersion = '3.7.0'
+
+
+    runnerVersion = "1.0.1"
+    rulesVersion = "1.0.1"
+    junitVersion = "4.12"
+    espressoVersion = "3.0.1"
+
+    reactVersion = '2.0.1'
+    multidexVersion = "1.0.3"
+
+
+    supportLibDependencies = [
+            appcompt        : "com.android.support:appcompat-v7:$supportLibVersion",
+            desigin         : "com.android.support:design:$supportLibVersion",
+//            animatedVector  : "com.android.support:animated-vector-drawable::$supportLibVersion",
+//            customTabs      : "com.android.support:customtabs::$supportLibVersion",
+//            cardView        : "com.android.support:cardview-v7::$supportLibVersion",
+            lifecycle       : "android.arch.lifecycle:extensions:$archComponentsVersion",
+            lifecycleRuntime: "android.arch.lifecycle:runtime:$archComponentsVersion",
+            constraintLayout: "com.android.support.constraint:constraint-layout:$constraintLayoutVersion",
+            multidex        : "com.android.support:multidex:$multidexVersion"
+
+
+    ]
+
+
+    retrofitDependencies = [
+            retrofit           : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitGson       : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            retrofitMock       : "com.squareup.retrofit2:retrofit-mock:$retrofitVersion",
+            retrofitInterceptor: "com.squareup.okhttp3:logging-interceptor:$okhttpLoggingInterceptorVersion"
+    ]
+
+
+    commonDependencies = [
+            glide      : "com.github.bumptech.glide:glide:$glideVersion"
+    ]
+
+}
